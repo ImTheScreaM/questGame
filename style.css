@@ -1,0 +1,421 @@
+body {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+}
+   
+.none-display {
+    display: none;
+}   
+
+.block-display {
+    display: block;
+}
+
+.firstQuest {
+    display: flex;
+    position: absolute;
+    top: -px;
+    left: -832px;
+    flex-wrap: wrap;
+    width: 3000px;
+
+}
+
+#firstQuestText {
+    position: absolute;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+    top: -300px;
+    left: -270px;
+}
+
+#QuestThree {
+    position: absolute;
+    top: -350px;
+    left: -835px;
+    width: 1918px;
+    height: 946px;
+    border: 1px solid black;
+}
+
+#btn {
+    position: relative;
+    top: 90px;
+    left: 70px;
+    width: 120px;
+    height: 100px;
+}
+
+.ThreeQuest {
+    display: none;
+}
+
+#inputUserName {
+    position: absolute;
+    width: 175px;
+    height: 20px;
+    top: 70px;
+    border: none;
+    border-bottom: 2px solid #8555b9;
+}
+
+#buttonSubmit {
+    position: absolute;
+    border: none;
+    background-color: white;
+    left: 116px;
+    top: 70px;
+    text-transform: uppercase;
+    color: #560eff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+#inputUserName:focus , #QuestTwoInput:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+#ReadyText {
+    position: absolute;
+    top: -30px;
+    width: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ReadyButton {
+    position: absolute;
+    left: 140px;
+    top: 123px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background: white;
+    border: none;
+}
+
+#ReadyInput {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    border-radius: 25px;
+    top: 120px;
+}
+
+#ReadyInput::-webkit-input-placeholder {
+    position: absolute;
+    font-size: 18px;
+    top: -1px;
+    left: 10px;
+}
+
+#QuestTwoText {
+    position: absolute;
+    top: -65px;
+    left: -220px;
+    border-right: solid 3px rgba(252, 32, 3, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-size: 28px;
+    color: #44107a;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) forwards;
+}
+
+@keyframes animated-text{
+    from{
+        width: 0;
+    }
+    to{
+        width: 900px;
+    }
+}
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(252, 32, 3, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+#QuestTwoInput {
+    position: absolute;
+    top: 100px;
+    border: none;
+    border-bottom: 2px solid #8555b9;
+}
+
+#QuestTwoInput::-webkit-input-placeholder {
+    position: absolute;
+    left: 65px;
+    text-transform: uppercase;
+    font-family:cursive;
+}
+
+#QuestTwoButton {
+    position: absolute;
+    top: -360px;
+    left: 100px;
+    font-size: 0.1px;
+    opacity: 0.4;
+    border: none;
+    border-bottom:1px solid red ;
+}
+
+#QuestTwoButtonHelp {
+    position: absolute;
+    top: 130px;
+    left: 10px;
+}
+
+#halfway {
+    position: absolute;
+    top: -1px;
+    width: 510px;
+    font-style: italic;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animHalWay 5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes animHalWay {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+#moveOnFour {
+    position: absolute;
+    top: 150px;
+    width: 100px;
+    color: snow;
+    border: 1px solid #8b70eb;
+    border-radius: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(
+        -225deg,
+        #8b70eb 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    animation: animHalWay 5s linear infinite;
+}
+
+#MathText {
+    position: absolute;
+    width: 400px;
+    left: -60px;
+}
+
+#MathButton {
+    position: absolute;
+    top: 150px;
+    left: 65px;
+    background-color: white;
+    border: none;
+    border-bottom:3px solid #44107a;
+    box-shadow: 15px 30px 5px 7px black;
+    border-radius: 50px;
+}
+
+#MathTestOneText {
+    position: absolute;
+    width: 600px;
+    left: -90px;
+    animation: animMathTestOne 2s ease-in ;
+}
+
+@keyframes animMathTestOne  {
+    100% {
+        transform: rotate(-360deg);
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+}
+
+#MathTestOneInput {
+    position: absolute;
+    top: 150px;
+    border-radius: 20px;
+    height: 20px;
+} 
+
+#MathTestOneButton {
+    position: absolute;
+    left: 114px;
+    top: 153px;
+    background-color: white;
+    border: none;
+}
+
+#MathTestTwoText {
+    position: absolute;
+    width: 600px;
+    left: -90px;
+    color: #560eff;
+    animation: animTestThreeText 2s infinite;
+}
+
+#MathTestTwoInput {
+    position: absolute;
+    top: 150px;
+    border-radius: 20px;
+    height: 20px;
+}
+
+#MathTestTwoButton { 
+    position: absolute;
+    left: 114px;
+    top: 153px;
+    background-color: white;
+    border: none;
+}
+
+#MathTestThreeText {
+    position: absolute;
+    width: 600px;
+    left: -90px;
+    background-image: linear-gradient(
+        -225deg,
+        #8b70eb 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    display: inline-block;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animTestThreeText 2s infinite;
+}
+
+@keyframes animTestThreeText {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+#MathTestThreeInput {
+    position: absolute;
+    top: 180px;
+    border-radius: 20px;
+    height: 20px;
+}
+
+#MathTestThreeButton { 
+    position: absolute;
+    left: 114px;
+    top: 183px;
+    background-color: white;
+    border: none;
+}
+
+#finalMathTest {
+    width: 500px;
+}
+
+#finalMathTestBtn {
+    display: flex;
+    height: 65px;
+    width: 380px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #48335f;
+}
+
+#MathTestFourText {
+    position: absolute;
+    width: 680px;
+    top: -40px;
+    left: -100px;
+}
+
+#MathTestFourInput {
+        position: absolute;
+        top: 100px;
+        left: 80px;
+}
+
+#MathTestFourButton {
+        position: absolute;
+        top: 100px;
+        left: 256px;
+}
+
+#FinalText {
+    position: absolute;
+    width: 410px;
+    top: -10px;
+    left: -20px;
+}
+
+#ResetBtn {
+    position: absolute;
+    top: 210px;
+    left: -300px;
+    width: 1000px;
+    height: 400px;
+    font-size: 150px;
+    color: red;
+    animation: animTestThreeText 2s infinite;
+    background-image: linear-gradient(
+        -225deg,
+        #8b70eb 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+}
+
