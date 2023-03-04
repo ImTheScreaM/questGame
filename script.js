@@ -29,14 +29,14 @@ playBtn.addEventListener('click', () => {
 })
 
 // Preloader
-const audioHide = document.getElementById('none')
-audioHide.style.display = 'none'
+const hideEl = document.getElementById('none')
+hideEl.style.display = 'none'
 
 window.onload = function () {
        setTimeout(() => {
               const preloader = document.getElementById('preloader');
               preloader.style.display = 'none'
-              audioHide.style.display = 'block'
+              hideEl.style.display = 'block'
               
        },3500)
 }
