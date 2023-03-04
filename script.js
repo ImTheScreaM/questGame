@@ -30,7 +30,7 @@ playBtn.addEventListener('click', () => {
 
 // Preloader \\
 const hideEl = document.getElementById('none')
-// hideEl.style.display = 'none'
+hideEl.style.display = 'none'
 
 window.onload = function () {
        setTimeout(() => {
@@ -92,7 +92,7 @@ readyButton.addEventListener("click", () => {
 const firstQuestText = document.querySelector("#firstQuestText")
 const firstQuest = document.querySelector('#firstQuest');
 
-for (let i = 0 ; i < 1; i++) {
+for (let i = 0 ; i < 100; i++) {
        const button = document.createElement('button');
        button.innerText = ' ';
        button.style.width = '250px';
@@ -100,8 +100,9 @@ for (let i = 0 ; i < 1; i++) {
        firstQuest.append(button);
 }
 
-const trueButton = firstQuest.children[Math.floor(Math.random()*1)]
-       
+const trueButton = firstQuest.children[Math.floor(Math.random()*100)]
+       trueButton.style.background = "red"
+
 trueButton.addEventListener("click", () => {
        alert('Complete (Hell =)) )') 
        firstQuestText.style.display = "none"
