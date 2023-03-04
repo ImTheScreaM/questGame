@@ -1,4 +1,4 @@
-// Audio
+// Audio \\
 const player = document.querySelector('.player'),
               playBtn = document.querySelector('.play'),
               audio = document.querySelector('.audio'),
@@ -28,9 +28,9 @@ playBtn.addEventListener('click', () => {
       }
 })
 
-// Preloader
+// Preloader \\
 const hideEl = document.getElementById('none')
-hideEl.style.display = 'none'
+// hideEl.style.display = 'none'
 
 window.onload = function () {
        setTimeout(() => {
@@ -41,7 +41,7 @@ window.onload = function () {
        },3500)
 }
 
-// Game // 
+// Game \\
 
 let inputUserName = document.createElement('input');
 let buttonSubmit = document.createElement('button');
