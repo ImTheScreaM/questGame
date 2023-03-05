@@ -101,6 +101,7 @@ const firstQuest = document.querySelector('#firstQuest');
 
 for (let i = 0 ; i < 100; i++) {
        const button = document.createElement('button');
+       button.id = "questButton"
        button.innerText = ' ';
        button.style.width = '250px';
        button.style.height = '150px';
@@ -108,7 +109,8 @@ for (let i = 0 ; i < 100; i++) {
 }
 
 const trueButton = firstQuest.children[Math.floor(Math.random()*100)]
-const falseButton = firstQuest.children[Math.floor(Math.random())*100]
+const falseButton = firstQuest.children[Math.floor(Math.random()*100)]
+trueButton.style.background = "red"
 
 trueButton.addEventListener("click", () => {
        alert('Complete (Hell =)) )') 
@@ -203,7 +205,7 @@ mathTestOneButton.id = "MathTestOneButton"
 mathTestOneButton.textContent = "Answer"
 
 mathButton.addEventListener('click',() => {
-       MathTestOneText.innerHTML = "Какое число получится, если перемножить все цифры на цифровой клавиатуре телефона?"
+       mathTestOneText.innerHTML = "Какое число получится, если перемножить все цифры на цифровой клавиатуре телефона?"
 })
 
 mathTestOneButton.addEventListener('click', () => {
