@@ -1,8 +1,8 @@
 // Audio \\
 const player = document.querySelector('.player'),
+              imgSrc = document.querySelector('.img__src'),
               playBtn = document.querySelector('.play'),
-              audio = document.querySelector('.audio'),
-              imgSrc = document.querySelector('.img__src');
+              audio = document.querySelector('.audio');
                               
 // Play function
 function playSong() {
@@ -29,16 +29,23 @@ playBtn.addEventListener('click', () => {
 })
 
 // Preloader \\
-const hideEl = document.getElementById('none')
-hideEl.style.display = 'none'
 
 window.onload = function () {
        setTimeout(() => {
               const preloader = document.getElementById('preloader');
               preloader.style.display = 'none'
-              hideEl.style.display = 'block'
               
-       },3500)
+       },4000)
+}
+
+const gitHub = document.createElement('h1')
+gitHub.innerHTML = "https://github.com/ImTheScreaM"
+gitHub.id = "gitHub"
+gitHub.onclick = gotoLink
+document.body.append(gitHub)
+
+function gotoLink() {
+       location.href = "https://github.com/ImTheScreaM";
 }
 
 // Game \\

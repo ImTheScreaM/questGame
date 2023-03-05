@@ -438,6 +438,16 @@ body {
     background: white;
 }
 
+.back-preloader {
+    position: absolute;
+    top: -385px;
+    left: -800px;
+    width: 1879px;
+    height: 980px;
+    z-index: -1;
+    background: white;
+}
+
 .circle {
     width:20px;
     height:20px;
@@ -484,7 +494,6 @@ body {
     position: absolute;
     top:62px;
     transform-origin: 50%;
-    z-index: -1;
     left:15%;
     filter: blur(1px);
     animation: shadow .5s alternate infinite ease;
@@ -530,7 +539,6 @@ body {
 .wrapper {
     position: fixed;
     left: -20px;
-    z-index: 999;
 }
 
 .player {
@@ -560,4 +568,35 @@ body {
     background-color: rgba(255, 123, 100, 0.864);
     border-radius: 8px;
     background-position: center center;
+}
+
+/* GitHub */
+
+#gitHub {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    rotate: -90deg;
+    top: 500px;
+    left: 900px;
+}
+
+#gitHub:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 255px;
+    left: 300px;
+    rotate: 90deg;
+    width: 1px;
+    height: 200px;
+    background-color: #000000;
+    margin: -350px auto 120px;
+}
+
+#gitHub:hover {
+    transition: 0.5s;
+    color: rgb(132, 196, 196);
+    cursor:pointer;
 }
