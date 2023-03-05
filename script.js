@@ -110,7 +110,6 @@ for (let i = 0 ; i < 100; i++) {
 
 const trueButton = firstQuest.children[Math.floor(Math.random()*100)]
 const falseButton = firstQuest.children[Math.floor(Math.random()*100)]
-trueButton.style.background = "red"
 
 trueButton.addEventListener("click", () => {
        alert('Complete (Hell =)) )') 
