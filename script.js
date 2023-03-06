@@ -229,7 +229,7 @@ mathTestTwoButton.id = "MathTestTwoButton"
 mathTestTwoButton.textContent = "Answer"
 
 mathTestOneButton.addEventListener('click', () => {
-       MathTestTwoText.innerHTML = "Где можно прибавить 2 к 11 и получить 1?"
+       mathTestTwoText.innerHTML = "Где можно прибавить 2 к 11 и получить 1?"
 })
 
 mathTestTwoButton.addEventListener('click', () => {

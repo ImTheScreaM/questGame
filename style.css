@@ -62,7 +62,6 @@ body {
 
 #inputUserName {
     position: absolute;
-    width: 175px;
     height: 20px;
     top: 70px;
     border: none;
@@ -89,8 +88,8 @@ body {
 
 #ReadyText {
     position: absolute;
-    top: -30px;
-    width: 200px;
+    /* top: -30px; */
+    width: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: linear-gradient(
         -225deg,
@@ -290,11 +289,12 @@ body {
     top: 150px;
     border-radius: 20px;
     height: 20px;
+    width: 200px;
 } 
 
 #MathTestOneButton {
     position: absolute;
-    left: 114px;
+    left: 134px;
     top: 153px;
     background-color: white;
     border: none;
