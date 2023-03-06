@@ -21,13 +21,12 @@ body {
 }
 
 .firstQuest {
-    display: flex;
+    display: grid;
     position: absolute;
-    top: -px;
-    left: -832px;
-    flex-wrap: wrap;
-    width: 3000px;
-
+    left: -662px;
+    grid-template-columns: 17fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
+    width: 1300px;
+    gap: 10px;
 }
 
 #firstQuestText {
@@ -88,7 +87,6 @@ body {
 
 #ReadyText {
     position: absolute;
-    /* top: -30px; */
     width: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: linear-gradient(
@@ -102,6 +100,7 @@ body {
     background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
+    line-height: 36px;
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -110,7 +109,7 @@ body {
 #ReadyButton {
     position: absolute;
     left: 140px;
-    top: 123px;
+    top: 153px;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
@@ -123,7 +122,7 @@ body {
     width: 200px;
     height: 20px;
     border-radius: 25px;
-    top: 120px;
+    top: 150px;
 }
 
 #ReadyInput::-webkit-input-placeholder {
@@ -131,6 +130,16 @@ body {
     font-size: 18px;
     top: -1px;
     left: 10px;
+}
+
+
+#questButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width:150px;
+    height:150px;
+    cursor: pointer;
+    
 }
 
 #QuestTwoText {
@@ -181,7 +190,7 @@ body {
 
 #QuestTwoButton {
     position: absolute;
-    top: -360px;
+    top: 360px;
     left: 100px;
     font-size: 0.1px;
     opacity: 0.4;

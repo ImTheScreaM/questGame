@@ -38,6 +38,8 @@ window.onload = function () {
        },4000)
 }
 
+// My GitHub \\
+
 const gitHub = document.createElement('h1')
 gitHub.innerHTML = "https://github.com/ImTheScreaM"
 gitHub.id = "gitHub"
@@ -86,6 +88,7 @@ readyButton.addEventListener("click", () => {
               readyText.style.display = "none";
               readyInput.style.display = "none";
               readyButton.style.display = "none";
+              
               firstQuest.classList.toggle('firstQuest');
               firstQuestText.classList.toggle('firstQuest');
 
@@ -98,18 +101,17 @@ readyButton.addEventListener("click", () => {
 
 const firstQuestText = document.querySelector("#firstQuestText")
 const firstQuest = document.querySelector('#firstQuest');
+firstQuestText.id = "firstQuestText"
 
-for (let i = 0 ; i < 100; i++) {
+for (let i = 0 ; i < 75; i++) {
        const button = document.createElement('button');
        button.id = "questButton"
        button.innerText = ' ';
-       button.style.width = '250px';
-       button.style.height = '150px';
        firstQuest.append(button);
 }
 
-const trueButton = firstQuest.children[Math.floor(Math.random()*100)]
-const falseButton = firstQuest.children[Math.floor(Math.random()*100)]
+const trueButton = firstQuest.children[Math.floor(Math.random()*75)]
+const falseButton = firstQuest.children[Math.floor(Math.random()*75)]
 
 trueButton.addEventListener("click", () => {
        alert('Complete (Hell =)) )') 
@@ -144,7 +146,7 @@ trueButton.addEventListener("click", () => {
 })
 
 questTwoButtonHelp.addEventListener('click', () => {
-       questTwoButtonHelp.innerHTML = "Кнопка где-то в верху"
+       questTwoButtonHelp.innerHTML = "Кнопка где-то внизу"
 })
 
 questTwoButton.addEventListener('click', () => {
